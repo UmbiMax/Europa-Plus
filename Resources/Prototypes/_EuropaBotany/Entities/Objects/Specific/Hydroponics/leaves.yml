@@ -5,7 +5,7 @@
   description: Medicinal hemp leaves.
   components:
   - type: Sprite
-    sprite: _BotanySupermancy/Objects/Specific/Hydroponics/cannabis_vita.rsi
+    sprite: _EuropaBotany/Objects/Specific/Hydroponics/cannabis_vita.rsi
   - type: Produce
     seedId: CannabisVita
   - type: Food
@@ -36,7 +36,7 @@
         - ReagentId: THC
           Quantity: 12
   - type: Sprite
-    sprite: _BotanySupermancy/Objects/Specific/Hydroponics/cannabis_vita.rsi
+    sprite: _EuropaBotany/Objects/Specific/Hydroponics/cannabis_vita.rsi
     state: dried
 
 - type: entity

@@ -1981,7 +1981,7 @@
         - ReagentId: StypticPowder
           Quantity: 20
   - type: Sprite
-    sprite: _EuropeBotany/Objects/Specific/Hydroponics/lily.rsi # EuropeBotany-Edit
+    sprite: _EuropaBotany/Objects/Specific/Hydroponics/lily.rsi # EuropeBotany-Edit
   - type: Produce
     seedId: lily
   - type: Extractable
@@ -1991,7 +1991,7 @@
     - Flower
   - type: FoodSequenceElement
     sprite:
-      sprite: _EuropeBotany/Objects/Specific/Hydroponics/lily.rsi # EuropeBotany-Edit
+      sprite: _EuropaBotany/Objects/Specific/Hydroponics/lily.rsi # EuropeBotany-Edit
       state: produce
     entries:
       burger:

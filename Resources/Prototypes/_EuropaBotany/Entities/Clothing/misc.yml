@@ -5,10 +5,10 @@
   description: A majestic crown made of fresh geranium flowers. Perfect for botanists and nature lovers.
   components:
   - type: Sprite
-    sprite: _BotanySupermancy/Clothing/Head/Misc/geranium_crown.rsi
+    sprite: _EuropaBotany/Clothing/Head/Misc/geranium_crown.rsi
     state: icon
   - type: Clothing
-    sprite: _BotanySupermancy/Clothing/Head/Misc/geranium_crown.rsi
+    sprite: _EuropaBotany/Clothing/Head/Misc/geranium_crown.rsi
     slots:
     - HEAD
   - type: Construction
@@ -22,10 +22,10 @@
   description: A flower crown made out of a string of bright red poppies.
   components:
   - type: Sprite
-    sprite: _BotanySupermancy/Clothing/Head/Misc/poppy_crown.rsi
+    sprite: _EuropaBotany/Clothing/Head/Misc/poppy_crown.rsi
     state: icon
   - type: Clothing
-    sprite: _BotanySupermancy/Clothing/Head/Misc/poppy_crown.rsi
+    sprite: _EuropaBotany/Clothing/Head/Misc/poppy_crown.rsi
     slots:
     - HEAD
   - type: Construction
@@ -39,10 +39,10 @@
   description: A bright flower crown made out sunflowers that is sure to brighten up anyone's day!
   components:
   - type: Sprite
-    sprite: _BotanySupermancy/Clothing/Head/Misc/sunflower_crown.rsi
+    sprite: _EuropaBotany/Clothing/Head/Misc/sunflower_crown.rsi
     state: icon
   - type: Clothing
-    sprite: _BotanySupermancy/Clothing/Head/Misc/sunflower_crown.rsi
+    sprite: _EuropaBotanyClothing/Head/Misc/sunflower_crown.rsi
     slots:
     - HEAD
   - type: Construction
@@ -56,10 +56,10 @@
   description: A delicate lily wreath - pure, graceful, timeless
   components:
   - type: Sprite
-    sprite: _BotanySupermancy/Clothing/Head/Misc/lily_wreath.rsi
+    sprite: _EuropaBotany/Clothing/Head/Misc/lily_wreath.rsi
     state: icon
   - type: Clothing
-    sprite: _BotanySupermancy/Clothing/Head/Misc/lily_wreath.rsi
+    sprite: _EuropaBotany/Clothing/Head/Misc/lily_wreath.rsi
     slots:
     - HEAD
   - type: Construction

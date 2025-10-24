@@ -8,6 +8,6 @@
 - type: stack
   id: LeavesCannabisVitaDried
   name: construction-graph-tag-dried-cannabis-vita
-  icon: { sprite: _BotanySupermancy/Objects/Specific/Hydroponics/cannabis_vita.rsi, state: dried }
+  icon: { sprite: _EuropaBotany/Objects/Specific/Hydroponics/cannabis_vita.rsi, state: dried }
   spawn: LeavesCannabisVitaDried
   maxCount: 5

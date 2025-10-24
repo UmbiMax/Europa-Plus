@@ -894,8 +894,6 @@
   packetPrototype: CornSeeds
   productPrototypes:
     - FoodCorn
-  mutationPrototypes:
-    - Snapcorn # EuropaBotany-Add
   lifespan: 25
   maturation: 8
   production: 6
@@ -906,10 +904,10 @@
   waterConsumption: 0.60
   idealHeat: 298
   chemicals:
-    # Nutriment: # EuropaBotany-Edit
-    #  Min: 1
-    #  Max: 10
-    #  PotencyDivisor: 20
+    Nutriment:
+      Min: 1
+      Max: 10
+      PotencyDivisor: 20
     Cornmeal:
       Min: 5
       Max: 15
