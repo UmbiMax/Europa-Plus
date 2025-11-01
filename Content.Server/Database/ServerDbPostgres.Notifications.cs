@@ -24,6 +24,7 @@ public sealed partial class ServerDbPostgres
     private static readonly string[] NotificationChannels =
     [
         BanManager.BanNotificationChannel,
+        BanManager.UnbanNotificationChannel,
         MultiServerKickManager.NotificationChannel,
     ];
 

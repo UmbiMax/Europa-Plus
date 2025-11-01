@@ -138,6 +138,18 @@ namespace Content.Server.Database
             return ConvertBan(ban);
         }
 
+        public override async Task<ServerUnbanDef?> GetServerUnbanAsync(int id)
+        {
+            await using var db = await GetDbImpl();
+
+            var query = db.SqliteDbContext.Unban
+                .Where(p => p.Id == id);
+
+            var ban = await query.SingleOrDefaultAsync();
+
+            return ConvertUnban(ban);
+        }
+
         public override async Task<ServerBanDef?> GetServerBanAsync(
             IPAddress? address,
             NetUserId? userId,

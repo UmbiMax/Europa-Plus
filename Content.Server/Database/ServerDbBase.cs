@@ -592,6 +592,8 @@ namespace Content.Server.Database
         /// <returns>The ban with the given id or null if none exist.</returns>
         public abstract Task<ServerBanDef?> GetServerBanAsync(int id);
 
+        public abstract Task<ServerUnbanDef?> GetServerUnbanAsync(int id);
+
         /// <summary>
         ///     Looks up an user's most recent received un-pardoned ban.
         ///     This will NOT return a pardoned ban.
