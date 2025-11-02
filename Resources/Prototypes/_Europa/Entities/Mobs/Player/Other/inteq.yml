@@ -46,6 +46,7 @@
   id: InteQVanguardLeader
   components:
   - type: GhostRole
+    whitelisted: true
     name: ghost-role-information-inteq-vanguard-leader
     description: ghost-role-information-inteq-vanguard-description
     rules: ghost-role-information-rules-team-antagonist
@@ -63,6 +64,7 @@
   id: InteQVanguardOperative
   components:
   - type: GhostRole
+    whitelisted: true
     name: ghost-role-information-inteq-vanguard-operative
     description: ghost-role-information-inteq-vanguard-description
     rules: ghost-role-information-rules-team-antagonist
@@ -74,6 +76,7 @@
   id: InteQVanguardSoldier
   components:
   - type: GhostRole
+    whitelisted: true
     name: ghost-role-information-inteq-vanguard-soldier
     description: ghost-role-information-inteq-vanguard-description
     rules: ghost-role-information-rules-team-antagonist
@@ -85,6 +88,7 @@
   id: InteQVanguardMedic
   components:
   - type: GhostRole
+    whitelisted: true
     name: ghost-role-information-inteq-vanguard-medic
     description: ghost-role-information-inteq-vanguard-description
     rules: ghost-role-information-rules-team-antagonist
