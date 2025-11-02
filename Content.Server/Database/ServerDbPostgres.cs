@@ -136,7 +136,7 @@ namespace Content.Server.Database
 
             var ban = await query.SingleOrDefaultAsync();
 
-            return ConvertUnban(ban);
+            return ConvertUnbanWtf(ban);
         }
 
         public override async Task<ServerBanDef?> GetServerBanAsync(
@@ -340,6 +340,25 @@ namespace Content.Server.Database
 
             return new ServerUnbanDef(
                 unban.Id,
+                aUid,
+                unban.UnbanTime);
+        }
+
+        private static ServerUnbanDef? ConvertUnbanWtf(ServerUnban? unban)
+        {
+            if (unban == null)
+            {
+                return null;
+            }
+
+            NetUserId? aUid = null;
+            if (unban.UnbanningAdmin is {} aGuid)
+            {
+                aUid = new NetUserId(aGuid);
+            }
+
+            return new ServerUnbanDef(
+                unban.BanId,
                 aUid,
                 unban.UnbanTime);
         }
