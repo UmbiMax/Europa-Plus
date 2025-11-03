@@ -425,6 +425,12 @@ namespace Content.Server.Voting.Managers
                 }
             }
 
+            if (v.Entries == null || v.Entries.Length == 0)
+            {
+                CancelVote(v);
+                return;
+            }
+
             // Find winner or stalemate.
             var winners = v.Entries
                 .GroupBy(e => e.Votes)

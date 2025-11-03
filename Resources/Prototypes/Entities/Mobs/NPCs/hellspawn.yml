@@ -75,7 +75,7 @@
   - BaseSimpleMob
   - MobCombat
   - MobBloodstream
-  id: MobHellspawn
+  id: MobHellspawn # Europa+ Edit
   description: An unstoppable force of carnage.
   components:
   - type: GhostRole
@@ -105,8 +105,38 @@
     damageContainer: BiologicalMetaphysical
     damageModifierSet: HellSpawn
   - type: MovementSpeedModifier
-    baseWalkSpeed: 2
-    baseSprintSpeed: 3
+    baseWalkSpeed: 3
+    baseSprintSpeed: 4.5
+  - type: NightVision
+    color: "#ad0000"
+    activateSound: null
+    deactivateSound: null
+  - type: Devourer
+    structureDevourTime: 5
+    foodPreferenceWhitelist:
+      components:
+      - HumanoidAppearance
+    stomachStorageWhitelist:
+      components:
+      - MobState
+      - Item
+    chemical: Ichor
+    healRate: 5
+    whitelist:
+      components:
+      - MobState
+      - Door
+      - Item
+      tags:
+      - Wall
+  - type: Puller
+    needsHands: false
+  - type: Prying
+    pryPowered: true
+    force: true
+    speedModifier: 2.5
+    useSound:
+      path: /Audio/Items/crowbar.ogg
   - type: Sprite
     sprite: Mobs/Demons/hellspawn.rsi
     layers:
@@ -119,12 +149,13 @@
       Dead:
         Base: dead
   - type: Firestarter
+    ignitionRadius: 6
   - type: NameIdentifier
     group: GenericNumber
   - type: SlowOnDamage
     speedModifierThresholds:
-      60: 0.7
-      80: 0.5
+      300: 0.7
+      600: 0.5
   - type: MobPrice
     price: 1000 # Living critters are valuable in space.
   - type: Perishable
@@ -152,20 +183,27 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      450: Dead
+      800: Dead
   - type: Butcherable
     spawned:
       - id: ArtifactFragment
         amount: 4
   - type: MeleeWeapon
-    attackRate: 0.6
+    altDisarm: false
+    angle: 0
+    attackRate: 0.8
     hidden: true
     soundHit:
       path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
     damage:
       types:
-        Blunt: 150
-        Structural: 70
+        Blunt: 100
+        Slash: 50
+        Structural: 150
+  - type: NoSlip
+  - type: Speech
+    speechVerb: LargeMob
+  - type: CombatMode
   - type: FootstepModifier
     footstepSoundCollection:
       collection: FootstepThud

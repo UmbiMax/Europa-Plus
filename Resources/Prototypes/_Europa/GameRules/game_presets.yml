@@ -128,3 +128,22 @@
   - MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
+
+- type: gamePreset
+  id: 9CirclesHell #Admin Use
+  alias:
+  - hell
+  - 9circleshell
+  name: nine-circles-hell-title
+  showInVote: false
+  description: nine-circles-hell-description
+  rules:
+  - Devil
+  - Shadowling
+  - CosmicCult
+  - Changeling
+  - Heretic
+  - DummyNonAntag
+  - SpaceTrafficControlEventScheduler
+  - BasicRoundstartVariation
+  - BasicStationEventScheduler

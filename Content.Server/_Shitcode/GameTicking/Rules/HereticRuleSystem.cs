@@ -70,7 +70,11 @@ public sealed class HereticRuleSystem : GameRuleSystem<HereticRuleComponent>
         if (!TryGetRandomStation(out var station))
             return;
 
-        var grid = GetStationMainGrid(station.Value!);
+        if (!TryComp(station.Value, out Content.Server.Station.Components.StationDataComponent? stationComp))
+            return;
+
+        var stationEntity = (station.Value, stationComp);
+        var grid = GetStationMainGrid(stationEntity);
 
         if (grid == null)
             return;
