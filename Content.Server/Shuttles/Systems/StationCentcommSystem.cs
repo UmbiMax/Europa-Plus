@@ -56,6 +56,7 @@ public sealed partial class StationCentCommSystem : EntitySystem
                 continue;
 
             component.MapId = otherComp.MapId;
+            component.StationEntity = otherComp.StationEntity;
             return;
         }
 
