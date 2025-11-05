@@ -409,6 +409,7 @@ namespace Content.Server.GameTicking
 
                 _chatManager.DispatchServerMessage(player,
                     Loc.GetString("game-ticker-player-fuck-this-shit"));
+                PlayerJoinLobby(player);
                 return;
             }
 
