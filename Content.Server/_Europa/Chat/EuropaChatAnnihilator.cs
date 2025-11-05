@@ -18,6 +18,7 @@ public sealed class EuropaChatAnnihilator
     [Dependency] private readonly IBanManager _banManager = default!;
     [Dependency] private readonly IPlayerLocator _locator = default!;
     [Dependency] private readonly IPlayerManager _playerMan = default!;
+    [Dependency] private readonly IAdminManager _admin = default!;
 
     private ThunderstrikeSystem? _thunder;
     private bool _doAnnihilate;
@@ -158,6 +159,9 @@ public sealed class EuropaChatAnnihilator
         if (!_doAnnihilate)
             return false;
 
+        if (_admin.IsAdmin(player, true))
+            return false;
+
         foreach (var phrase in IcShit)
         {
             if (!message.ToLower().Contains(phrase))
@@ -183,6 +187,9 @@ public sealed class EuropaChatAnnihilator
             return false;
 
         if (session == null)
+            return false;
+
+        if (_admin.IsAdmin(session, true))
             return false;
 
         foreach (var phrase in OocShit)
