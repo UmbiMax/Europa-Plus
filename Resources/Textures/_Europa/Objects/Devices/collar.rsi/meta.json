@@ -8,19 +8,15 @@
   },
   "states": [
     {
-      "name": "handcuff",
+      "name": "icon",
       "delays": [[ 0.3, 0.3, 0.3 ]]
     },
     {
       "name": "equipped-BELT",
       "directions": 4
     },
-	  {
-      "name": "body-overlay-2",
-      "directions": 4
-    },
-	  {
-      "name": "body-overlay-4",
+    {
+      "name": "equipped-NECK",
       "directions": 4
     },
     {
